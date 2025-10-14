@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos Ink | United Brothers Tattoo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Eventos Ink</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="eventos">
+    <section class="manager">
+      <div class="manager-info">
+        <img src="IMAGENES/manager.jpeg" class="manager-img">
+
+        <div class="info">
+          <h2>Gabriel Alvarez</h2>
+          <p>
+            Hola, soy Gabriel, manager de los eventos en <b>United Brothers Tattoo</b>. 
+            Te invitamos a participar y defender tu título como tatuador o simplemente a acompañarnos 
+            en cada evento — tu presencia y compromiso son importantes para nosotros.
+          </p>
+          <p>Por aquí te estaré dejando algunos de los eventos ya realizados, te estare dejando mi intagram y numero celular por si quieres acompañarnos o inscribirte en el combate para defender tu titulo como profecional los esperamos.</p>
+
+          <p class="contacto-manager">
+           📞 <a href="https://wa.me/573228005216" target="_blank">3228005216</a> — 📸 <a href="https://www.instagram.com/gabriel_alvarezt" target="_blank">@gabriel_alvarezt</a></p>
+
+          </p>
+        </div>
+      </div>
+     <div class="videos-eventos">
+  <h1>Eventos Recientes</h1>
+
+  <div class="video-grid">
+    <div class="video-container">
+      <video id="video1" src="VIEDOS/COMBATES%20INK%201.mp4" autoplay muted loop playsinline></video>
+      <button class="btn-sonido" data-video="video1" title="Activar sonido">🔇</button>
+    </div>
+
+    <div class="video-container">
+      <video id="video2" src="VIEDOS/INSCRIPCIONES.mp4" autoplay muted loop playsinline></video>
+      <button class="btn-sonido" data-video="video2" title="Activar sonido">🔇</button>
+    </div>
+
+    <div class="video-container">
+      <video id="video3" src="VIEDOS/equipo%20de%20trabajo.mp4" autoplay muted loop playsinline></video>
+      <button class="btn-sonido" data-video="video3" title="Activar sonido">🔇</button>
+    </div>
+  </div>
+</div>
+  <body>
+  <script>
+   // Selecciona todos los botones de sonido
+const botonesSonido = document.querySelectorAll('.btn-sonido');
+
+botonesSonido.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const videoId = btn.getAttribute('data-video');
+    const video = document.getElementById(videoId);
+
+    // Alterna mute y play al hacer clic
+    if (video.muted) {
+      video.muted = false;       // Quita el mute
+      video.play();               // Fuerza reproducción con sonido
+      btn.textContent = "🔊";     // Cambia ícono
+      btn.title = "Desactivar sonido";
+    } else {
+      video.muted = true;        // Vuelve a silenciar
+      btn.textContent = "🔇";     // Cambia ícono
+      btn.title = "Activar sonido";
+    }
+  });
+});
+
+  </script>
+</body>
+    </section>
+
+      <div class="combates ink">
+  <h2>
+    Sé el próximo <b>ganador</b> de esta grandiosa competencia Ink.
+    ¡No te lo pierdas! Te esperamos atentamente <b>United Brothers Tattoo</b>.
+  </h2>
+
+  <div class="imagenes-combate">
+    <img src="IMAGENES/combate%20ink%201.jpg" alt="Combate Ink 1">
+    <img src="IMAGENES/combate%20ink%202.jpg" alt="Combate Ink 2">
+    <img src="IMAGENES/combate%20ink%203.jpg" alt="Combate Ink 3">
+  </div>
+</div>
+
+      </div>
+      <div class="premios">
+      <h2> premios al mejor tatuador en estilo libre</h2>
+      <img src="IMAGENES/premios combate ink.jpg" width="100px">
+      </div>
+      
+
+     <div class="ganadores ink">
+  <h2>Ganadores pasados del Combate Ink</h2>
+
+  <div class="imagenes">
+    <img src="IMAGENES/ganadores%20c.ink%201.jpg" alt="Ganadores Ink 1">
+    <img src="IMAGENES/ganadores%20c.ink%202.jpg" alt="Ganadores Ink 2">
+    <img src="IMAGENES/ganadores%20c.ink%203.jpg" alt="Ganadores Ink 3">
+  </div>
+</div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 United Brothers Tattoo | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
