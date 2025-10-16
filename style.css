@@ -1030,7 +1030,7 @@ footer {
   border-radius: 20px;
   padding: 40px;
   box-shadow: 0 15px 30px rgba(0,0,0,0.6);
-  max-width: 1000px;
+  max-width: 1100px;
   width: 100%;
   align-items: flex-start;
 }
@@ -1039,9 +1039,9 @@ footer {
 .contacto-video {
   position: relative;
   flex: 1;
-  min-width: 300px;
+  min-width: 320px;
   max-width: 600px;
-  height: 700px;
+  height: 600px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(255, 102, 0, 0.3);
@@ -1079,15 +1079,15 @@ footer {
 /* INFO */
 .contacto-info {
   flex: 1;
-  min-width: 300px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   gap: 20px;
   color: #f5f5f5;
-  align-items: center; /* centra todo dentro de info */
+  align-items: center;
 }
 
-/* TITULOS Y PARRAFOS */
+/* TITULOS Y PÁRRAFOS */
 .contacto-info h1,
 .contacto-info h3,
 .contacto-info p {
@@ -1095,9 +1095,18 @@ footer {
   margin: 0;
 }
 
-.contacto-info h1 { font-size: 2em; margin-bottom: 10px; }
-.contacto-info h3 { font-size: 1.5em; color: #eb7e36; }
-.contacto-info p { line-height: 1.4; }
+.contacto-info h1 { 
+  font-size: 2em; 
+  margin-bottom: 10px; 
+}
+.contacto-info h3 { 
+  font-size: 1.5em; 
+  color: #eb7e36; 
+}
+.contacto-info p { 
+  line-height: 1.5; 
+  font-size: 1em;
+}
 
 /* REDES */
 .contacto-redes {
@@ -1117,6 +1126,7 @@ footer {
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
+  font-size: 0.95em;
 }
 
 .btn-whatsapp { background-color: #25D366; color: white; }
@@ -1140,17 +1150,76 @@ footer {
 .imagen-contacto {
   display: flex;
   justify-content: center;
-  width: fit-content; /* se ajusta al ancho de los botones */
+  width: fit-content;
   margin-top: 10px;
 }
 
 .imagen-contacto img {
   width: 100%;
+  max-width: 350px;
   height: auto;
   border-radius: 9px;
   border: 1px solid rgb(158, 117, 94);
   box-shadow: 0 6px 18px rgb(131, 107, 76);
 }
 
+/* ==============================
+   RESPONSIVE DESIGN
+   ============================== */
+
+/* TABLET (hasta 992px) */
+@media (max-width: 992px) {
+  .contacto-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 40px;
+  }
+
+  .contacto-video {
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+  }
+
+  .contacto-info h1 { font-size: 1.8em; }
+  .contacto-info h3 { font-size: 1.3em; }
+  .contacto-info p { font-size: 0.95em; }
+}
+
+/* CELULAR (hasta 600px) */
+@media (max-width: 600px) {
+  #contacto {
+    padding: 40px 10px;
+  }
+
+  .contacto-container {
+    padding: 25px;
+    gap: 30px;
+    border-radius: 15px;
+  }
+
+  .contacto-video {
+    height: 280px;
+    max-width: 100%;
+  }
+
+  .contacto-info {
+    gap: 15px;
+  }
+
+  .contacto-info h1 { font-size: 1.6em; }
+  .contacto-info h3 { font-size: 1.1em; }
+  .contacto-info p { font-size: 0.9em; }
+
+  .contacto-redes a {
+    font-size: 0.9em;
+    padding: 8px 12px;
+  }
+
+  .imagen-contacto img {
+    max-width: 280px;
+  }
+}
 
 
