@@ -1,4 +1,3 @@
-
 /* RESETEO */
 * {
   margin: 0;
@@ -32,15 +31,15 @@ header {
   gap: 10px;
 }
 .foto {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  border: 1px solid #f78335;
-  box-shadow: 0 0 35px rgba(192, 96, 7, 0.822);
   width: 100%
   height: auto;
-  max-width: 850px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 11px;
+  border: 1px solid #f78335;
+  box-shadow: 0 0 35px rgba(192, 96, 7, 0.822);
+  object-fit: cover;
+  max-width: 900px
 }
 
 .logo {
@@ -206,7 +205,6 @@ nav a:hover {
   background-color: #e9af58;   /* cambio de color al pasar el mouse */
   transform: scale(1.05);      /* efecto hover ligero */
 }
-
 
 /* ===================== */
 /* blog */
@@ -831,7 +829,6 @@ footer {
   }
 }
 
-
 /* ====== ESTILOS EN TENDENCIA ====== */
 .tendencias {
   background-color: #2b02028a;
@@ -1150,4 +1147,5 @@ footer {
   border: 1px solid rgb(158, 117, 94);
   box-shadow: 0 6px 18px rgb(131, 107, 76);
 }
+
 
